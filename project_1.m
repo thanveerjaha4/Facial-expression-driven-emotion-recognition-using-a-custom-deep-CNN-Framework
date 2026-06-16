@@ -1,7 +1,9 @@
 %% Step 1: Load the digit dataset
 % Create an image datastore object to automatically load images
 % Include all subfolders, and use folder names (0–9) as labels
-imds = imageDatastore("C:\Users\Thanveer Jaha\OneDrive\Desktop\AI project",'IncludeSubfolders',true,'LabelSource','foldernames');
+imds = imageDatastore("C:\Users\Thanveer Jaha\OneDrive\ドキュメント\MATLAB\AIPROJ",...
+    'IncludeSubfolders',true,...
+    'LabelSource','foldernames');
 % Count number of images in each class (0–9)
 countEachLabel(imds)
 
